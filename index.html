@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+    <header id="header">
+        <img src="image/logo@.jpg" alt="Our Company's logo" id="header-img">
+        <h1 id="header-text"> MASTER PICASO</h1> <span id="sub-header-text">Your beauty is our concern ... visit us today.</span>
+        <label for="search" id="search-label">Search 
+            <input type="search" id="search">
+        </label>
+        <nav id="nav-bar">
+            <button class="nav-link"><a href="#"> HOME </a></button>
+            <button class="nav-link"><a href="#"> CONTACT </a></button>
+            <button class="nav-link"><a href="#"> ABOUT </a></button>
+        </nav>
+  
+        <div id="nav-container">
+            <div id="nav-menu">
+                <a href="#" class=" ">SUBJECTS</a>
+                <div id="nav-bars">
+                    <a href="#">PHYSICS</a>
+                    <a href="#">BIOLOGY</a>
+                    <a href="#">CHEMISTRY</a>
+                    <a href="#">GEOGRAPHY</a>
+                </div>
+                <a href="#" class="icon" onclick="iconChange()"><i onclick="iconToggle(this)" class="fa fa-plus-circle"></i></a>
+            </div>
+        </div> 
+    </header>
+
+    <main id="main-container">
+        <div id="side-nav">
+            <button class="nav-link"><a href="#trouser-section"> TROUSER SECTION </a></button>
+            <button class="nav-link"><a href="#shirt-section"> T-SHIRT SECTION </a></button>
+            <button class="nav-link"><a href="#polo-section"> POLO SECTION </a></button> 
+        </div>
+        <div id="center-container">
+    <video src="image/videop.mp4" id="video" controls></video>
+    <p id="description"> To continue watching kindly release your e-mail for our weekly podcast. Thanks our <b>esteem</b> customer</p>
+    <form action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email" id="email-label">E-mail:
+            <input type="email" id="email" name="email" placeholder="Kindly enter email ...">
+        </label>
+        <button id="submit" > SUBMIT</button>
+    </form>
+</div>
+<div id="advert-col">
+    <iframe src="image/videop.mp4" frameborder="0"></iframe>
+    <p>Advertise with us ... </p>
+</div> <hr>
+
+    </main>
+
+        <footer id="footer"></footer>
+    <script src="index.js"></script>
+</body>
+</html>

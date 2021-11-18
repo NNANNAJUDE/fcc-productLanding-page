@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    padding: 20px 30px;
+    border-bottom: 3px solid rgb(54, 155, 155);
+}
+#header, #footer{
+    background-color: cadetblue;
+    height: auto;
+}
+#header-img::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#header-img{
+    width: 100px;
+    border-radius: 30%;
+    float: left;
+}
+#header-text{
+    padding: 5px 20px;
+}
+#nav-container{
+    max-width: 30%;
+    position: relative;
+}
+#nav-menu{
+    overflow: hidden;
+    background-color: greenyellow;
+    position: absolute;
+    border-radius: 10px;
+}
+#nav-menu #nav-bars{
+    display: none;
+}
+#nav-menu a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+#nav-menu a.icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.icon i{
+    font-size: 30px;
+}
+#main-container{
+    display: flex;
+    width: 100%;
+    right: 0px;
+}
+#side-nav, #advert-col{
+    width: 20%;
+    padding: 10px;
+    background-color: cadetblue;
+}
+#center-container{
+    width: 60%;
+    padding: 10px;
+}
+@media screen and (max-width: 575px) {
+    #container{
+        display: block;
+    }
+    #side-nav, #advert-col, #center-container{
+        width: 100%;
+    }
+}
+#nav-bar{
+    margin-left: 70%;
+}
+#nav-bar a{
+    text-decoration: none;
+    padding: 3px;
+    color: cadetblue;
+    font-weight: bold;
+}
+#side-nav{
+    display: inline-block;
+}
+#side-nav button{
+    display: block;
+}
+#side-nav a{
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+    padding: 2px;
+    margin: 0px;
+}
+#video{
+    max-width: 100%;
+    height: auto;
+}
