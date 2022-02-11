@@ -10,29 +10,38 @@
 </head>
 <body>
     <header id="header">
+        <div id="h-container">
+            <div id="h-image">
         <img src="image/logo@.jpg" alt="Our Company's logo" id="header-img">
-        <h1 id="header-text"> MASTER PICASO</h1> <span id="sub-header-text">Your beauty is our concern ... visit us today.</span>
-        <label for="search" id="search-label">Search 
-            <input type="search" id="search">
-        </label>
-        <nav id="nav-bar">
-            <button class="nav-link"><a href="#"> HOME </a></button>
-            <button class="nav-link"><a href="#"> CONTACT </a></button>
-            <button class="nav-link"><a href="#"> ABOUT </a></button>
-        </nav>
-  
-        <div id="nav-container">
-            <div id="nav-menu">
-                <a href="#" class=" ">SUBJECTS</a>
-                <div id="nav-bars">
-                    <a href="#">PHYSICS</a>
-                    <a href="#">BIOLOGY</a>
-                    <a href="#">CHEMISTRY</a>
-                    <a href="#">GEOGRAPHY</a>
-                </div>
-                <a href="#" class="icon" onclick="iconChange()"><i onclick="iconToggle(this)" class="fa fa-plus-circle"></i></a>
-            </div>
-        </div> 
+    </div>
+    <div id="h-text">
+        <span id="header-span"><a id="header-text"> MASTER PICASO</a></span>
+        <span id="sub-header-text">Your beauty is our concern ... visit us today.</span>
+    </div>
+</div> 
+<div class="nav-link-cont">
+    <span class="showMenu" onclick="showMenu()">MENU</span>
+    <div id="nav-bars">
+        <a href="#">HOME</a>
+        <a href="#">NEWS</a>
+        <a href="#">ABOUT</a>
+        <a href="#">HISTORY</a>
+        <a href="#">RESOURCES</a>
+    </div>
+
+  <div id="label-input">
+    <label id="search-button"> 
+        <input type="search" id="search-input"> <i class="fa fa-search" onclick="searchBtn()"></i>
+    </label>
+  </div>
+</div>
+<div id="nav-bar-mediaQ">
+    <a href="#">HOME</a>
+    <a href="#">NEWS</a>
+    <a href="#">ABOUT</a>
+    <a href="#">HISTORY</a>
+    <a href="#">RESOURCES</a>
+</div>  
     </header>
 
     <main id="main-container">
@@ -41,24 +50,80 @@
             <button class="nav-link"><a href="#shirt-section"> T-SHIRT SECTION </a></button>
             <button class="nav-link"><a href="#polo-section"> POLO SECTION </a></button> 
         </div>
-        <div id="center-container">
+            <div id="center-container">
     <video src="image/videop.mp4" id="video" controls></video>
     <p id="description"> To continue watching kindly release your e-mail for our weekly podcast. Thanks our <b>esteem</b> customer</p>
-    <form action="https://www.freecodecamp.com/email-submit" method="post">
-        <label for="email" id="email-label">E-mail:
-            <input type="email" id="email" name="email" placeholder="Kindly enter email ...">
-        </label>
+    
+        <div id="trouser-section" class="text-content">
+            <a href="#">TROUSER SECTION</a>
+            <p id="geeks">js demo appear here: </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div id="shirt-section" class="text-content">
+            <a href="#">T-SHIRT SECTION</a>
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div id="polo-section" class="text-content">
+                <a href="#">POLO SECTION</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d pariatur.</p>
+            </div>
+            <p>To sign in for our newsletter kindly drop your e-mail below;</p>
+        <form action="https://www.freecodecamp.com/email-submit" method="post">
+            <label for="email" id="email-label">E-mail:
+                <input type="email" id="email" name="email" placeholder="Kindly enter email ...">
+            </label>
         <button id="submit" > SUBMIT</button>
     </form>
+    <div id="pagnation">
+        <a href="#trouser-section">1</a>
+        <a href="#shirt-section">2</a>
+        <a href="polo-section">3</a>
+        <a href="general-section">4</a>
+    </div>
 </div>
 <div id="advert-col">
     <iframe src="image/videop.mp4" frameborder="0"></iframe>
     <p>Advertise with us ... </p>
-</div> <hr>
-
+    <div id="social-media-icons">
+        you can join us via the following platforms;
+        <a href="#">Twitter <i class="fa fa-twitter"></i></a>
+        <a href="#">Facebook <i class="fa fa-facebook"></i></a>
+        <a href="#">Instagram <i class="fa fa-instagram"></i></a>
+        <a href="#">Linkedn <i class="fa fa-linkedin"></i></a>
+        <a href="#">Whatsapp <i class="fa fa-whatsapp"></i></a>
+    </div>
+</div> 
     </main>
 
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <p id="footer-text">Our brand is first to known;</p>
+
+            <div id="footer-cont">
+
+            <div class="footer-bar">
+                <a href="#">PHYSICS</a>
+                <a href="#">BIOLOGY</a>
+                <a href="#">CHEMISTRY</a>
+                <a href="#">GEOGRAPHY</a>
+            </div>
+
+            <div class="footer-bar">
+                <a href="#">PHYSICS</a>
+                <a href="#">BIOLOGY</a>
+                <a href="#">CHEMISTRY</a>
+                <a href="#">GEOGRAPHY</a>
+            </div>
+
+            <div class="footer-bar">
+                <a href="#">PHYSICS</a>
+                <a href="#">BIOLOGY</a>
+                <a href="#">CHEMISTRY</a>
+                <a href="#">GEOGRAPHY</a>
+            </div>
+        </div>
+        
+            <p id="copyright">Nnanna Jude Technologies Copyright &copy;2021</p>
+        </footer>
     <script src="index.js"></script>
 </body>
 </html>

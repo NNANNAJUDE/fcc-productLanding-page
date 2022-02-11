@@ -3,87 +3,130 @@
 }
 body,html{
     margin: 0px;
-    padding: 0px;
 }
-#header{
-    padding: 20px 30px;
+
+/*Designing Header */
+header{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    padding: 3px;
     border-bottom: 3px solid rgb(54, 155, 155);
+    border-bottom-right-radius: 20%;
 }
 #header, #footer{
-    background-color: cadetblue;
+    background-color: rgb(59, 152, 155);
+    max-width: 100%;
     height: auto;
 }
-#header-img::after{
-    content: "";
-    display: block;
-    clear: both;
+
+#h-container{
+    left: 0px;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: inline-flex;
+    position: relative;
+    margin-top: 10px;
 }
+
 #header-img{
-    width: 100px;
+    width: 50px;
     border-radius: 30%;
-    float: left;
+}
+#h-text >span >a{
+    display: block;
 }
 #header-text{
     padding: 5px 20px;
 }
-#nav-container{
-    max-width: 30%;
-    position: relative;
-}
-#nav-menu{
-    overflow: hidden;
-    background-color: greenyellow;
-    position: absolute;
-    border-radius: 10px;
-}
-#nav-menu #nav-bars{
-    display: none;
-}
-#nav-menu a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-}
-#nav-menu a.icon{
-    display: block;
+#label-input{
     position: absolute;
     right: 0;
-    top: 0;
+    border-radius: 20%;
+    margin: 0px 50px 0px 0px;
 }
-.icon i{
-    font-size: 30px;
+.nav-link-cont{
+    display: inline-flex;
+    padding: 15px;
 }
+@media screen and (min-width: 575px) {
+    .showMenu{
+        display: none;
+    }
+}
+#nav-bar-mediaQ{
+    display: none;
+}
+@media screen and (max-width: 575px) {
+    #nav-bars{
+        display: none;
+    }
+}
+#nav-bars{
+    margin: 0px 0px 0px 20px;
+}
+#nav-bars a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+#nav-bars a:hover{
+    color: white;
+    font-size: 20px;
+    transition: 1.5s;
+}
+.showMenu{
+    font-weight: bold;
+    padding: 5px;
+}
+.showMenu:hover{
+    color: white;
+    font-size: 20px;
+    transition: 1.5s;
+}
+#nav-bar-mediaQ a {
+    text-decoration: none;
+    display: block;
+    height: 60px;
+    background-color: violet;
+    z-index: 2;
+}
+#nav-bar-mediaQ{
+
+}
+
+/* Designing main container*/
 #main-container{
+    margin-top: 115px;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     right: 0px;
+    overflow: auto;
 }
 #side-nav, #advert-col{
     width: 20%;
-    padding: 10px;
-    background-color: cadetblue;
+    padding: 35px;
+    background-color: rgb(7, 109, 112);
 }
 #center-container{
     width: 60%;
-    padding: 10px;
+    padding: 35px;
 }
 @media screen and (max-width: 575px) {
-    #container{
+    #main-container{
         display: block;
     }
     #side-nav, #advert-col, #center-container{
         width: 100%;
     }
 }
-#nav-bar{
-    margin-left: 70%;
+.general{
+    width: 100%;
 }
-#nav-bar a{
-    text-decoration: none;
-    padding: 3px;
-    color: cadetblue;
-    font-weight: bold;
-}
+
 #side-nav{
     display: inline-block;
 }
@@ -92,12 +135,69 @@ body,html{
 }
 #side-nav a{
     text-decoration: none;
-    color: cadetblue;
+    color: rgb(7, 89, 92);
     font-weight: bold;
     padding: 2px;
     margin: 0px;
+    font-size: 15px;
 }
 #video{
     max-width: 100%;
     height: auto;
+}
+#social-media-icons > a{
+    display: block;
+    padding: 10px;
+}
+.text-content{
+    text-decoration: none;
+    color: rgb(2, 66, 68);
+    font-size: 25px;
+    font-weight: bolder;
+}
+#pagnation{
+    border: 2px solid black;
+    width: 20%;
+    margin: 0px auto;
+    padding: 3px;
+    border-radius: 10%;
+}
+#pagnation a{
+    padding: 3px;
+    border-right: 2px solid black;
+    text-decoration: none;
+    font-size: 120%;
+}
+#pagnation a:last-child{
+    border-right: none;
+    padding-right: 0px;
+}
+#footer-cont{
+    position: relative;
+    display: inline-flex;
+}
+#footer-text{
+    font-size: 25px;
+}
+.footer-bar{
+    display: inline-block;
+    padding: 5px;
+}
+/*#footer-bar::after{
+    content: "";
+    display: block;
+    clear: both;
+}*/
+#footer-bar a{
+    display: block;
+}
+footer{
+    bottom: 0px;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+#copyright{
+    bottom: 0px;
+    text-align: center;
 }
